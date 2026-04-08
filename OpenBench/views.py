@@ -556,6 +556,9 @@ def scripts(request):
     if request.POST['action'] == 'CREATE_TEST':
         return new_workload(request, "TEST")
 
+    if request.POST['action'] == 'CREATE_TUNE':
+        return new_workload(request, "TUNE")
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #                              CLIENT HOOK VIEWS                              #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
